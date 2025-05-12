@@ -9,6 +9,7 @@ import useLoginModal from '@/app/hooks/useLoginModal';
 import useRentModal from '@/app/hooks/useRentModal';
 import { signOut } from 'next-auth/react';
 import { SafeUser } from '@/app/types';
+import { useRouter } from 'next/navigation';
 
 
 interface UserMenuProps {
@@ -18,6 +19,7 @@ interface UserMenuProps {
 const UserMenu: React.FC<UserMenuProps> = ({
     currentUser
 }) => {
+    const router = useRouter();
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
     const rentModal = useRentModal();
@@ -63,40 +65,40 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             {currentUser ? (
                                 <>
                                     <MenuItem
-                                        onClick={() => {}}
-                                        label='My trips'
+                                        onClick={() => router.push("/trips")}
+                                        label='Миний аялал'
                                         />
                                         <MenuItem
-                                        onClick={() => {}}
-                                        label="My favorites"
+                                        onClick={() => router.push("/favorites")}
+                                        label="Таалагдсан"
                                         />
                                         <MenuItem
-                                        onClick={() => {}}
-                                        label="My reservations"
+                                        onClick={() => router.push("/reservations")}
+                                        label="Миний захиалга"
                                         />
                                         <MenuItem
-                                        onClick={() => {}}
-                                        label="My properties"
+                                        onClick={() => router.push("/properties")}
+                                        label="Миний өмч"
                                         />
                                         <MenuItem
                                         onClick={rentModal.onOpen}
-                                        label="My home"
+                                        label="Миний гэр"
                                         />
                                         <hr/>
                                         <MenuItem
                                         onClick={() => signOut()}
-                                        label="Logout"
+                                        label="Гарах"
                                         />
                                     </> 
                             ) : (
                             <>
                                     <MenuItem
                                     onClick={loginModal.onOpen}
-                                    label='Login'
+                                    label='Нэвтрэх'
                                     />
                                     <MenuItem
                                     onClick={registerModal.onOpen}
-                                    label="Sign up"
+                                    label="Бүртгүүлэх"
                                     />
                                 </> 
                             )}

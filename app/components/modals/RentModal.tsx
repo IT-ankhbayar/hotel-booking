@@ -239,7 +239,7 @@ const RentModal = () => {
                 <Input
                     id="price"
                     label="Price"
-                    formatPrice
+                    
                     type="number"
                     disabled={isLoading}
                     register={register}

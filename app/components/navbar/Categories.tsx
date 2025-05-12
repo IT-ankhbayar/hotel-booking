@@ -20,33 +20,33 @@ export const categories = [
     {
         label: 'Орон сууц',
         icon: MdOutlineVilla,
-        description: 'This property is modern!'
+        description: 'Орчин үеийн!'
     },
     {
         label: 'Орон нутаг',
         icon: TbMountain,
-        description: 'This property is in the countryside!'
+        description: 'Орон нутагт байршилтай!'
     },
     {
         label: 'Далайн эрэг',
         icon: TbBeach,
-        description: 'This property is close to the beach!'
+        description: 'Далайн эрэгтэй ойролцоо!'
     },
     {
         label: 'Салхин тээрэм',
         icon: GiWindmill,
-        description: 'This property has windmills!'
+        description: 'Салхин тээрэмд ч амьдрах боломжтой!'
     },
 
     {
         label: 'Усан сан',
         icon: TbPool,
-        description: 'This property has a pool!'
+        description: 'Усан сантай хаус!'
     },
     {
         label: 'Арал',
         icon: GiIsland,
-        description: 'This property is on an island!'
+        description: 'Арал дээр байршилтай!'
     },
     {
         label: 'Нуур',
@@ -56,12 +56,12 @@ export const categories = [
     {
         label: 'Цайз',
         icon: GiCastle,
-        description: 'This property is in a castle!'
+        description: 'Цайз дотор ч амьдрах боломжтой!'
     },
     {
         label: 'Зуслан',
         icon: GiForestCamp,
-        description: 'This property has camping activities!'
+        description: 'Та кемпинг хийх боломжтой!'
     },
     {
         label: 'Арктик',
@@ -71,35 +71,24 @@ export const categories = [
     {
         label: 'Агуй',
         icon: GiCaveEntrance,
-        description: 'This property is in a cave!'
+        description: 'Агуй дотор байршилтай!'
     },
     {
         label: 'Цөл',
         icon: GiCactus,
-        description: 'This property is in the desert!'
+        description: 'Цөл дунд байршилтай!'
     },
     {
         label: 'Амбаар',
         icon: GiBarn,
-        description: 'This property is in the barn!'
+        description: 'Амбаар!'
     },
     {
         label: 'Цанаар гулгах',
         icon: FaSkiing,
-        description: 'This property has skiing activities!'
+        description: 'Та цанаар гулгах боломжтой!'
     },
     
-    
-    
-
-
-
-
-
-
-
-
-
 ]
 
 const Categories = () => {
